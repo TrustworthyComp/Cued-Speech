@@ -1,0 +1,32 @@
+# PyTorch (install manually for your CUDA version)
+# pip install torch torchvision torchaudio
+
+# Core training
+pytorch-lightning>=2.0
+omegaconf>=2.3
+
+# Transformers & PEFT
+transformers>=4.40
+peft>=0.10
+accelerate>=0.28
+
+# Scientific computing
+numpy>=1.24
+scipy>=1.10
+einops>=0.7
+
+# Vision / feature extraction
+opencv-python-headless>=4.8
+mediapipe>=0.10
+Pillow>=10.0
+torchvision>=0.16
+
+# Progress bar
+tqdm>=4.65
+
+# Evaluation metrics
+rouge-score>=0.1
+jieba>=0.42          # optional, for Chinese WER tokenisation
+
+# Data processing
+python-docx>=1.0     # optional, for pinyin dictionary
