@@ -2,7 +2,7 @@
 
 <!-- badges -->
 [![Paper](https://img.shields.io/badge/Paper-IEEE%20ICDM%202026-2E6B8B)]()
-[![Code](https://img.shields.io/badge/Code-Anonymous%20Repository-9C27B0)](https://github.com/TrustworthyComp/Cued-Speech)
+[![Code](https://img.shields.io/badge/Code-%20Repository-9C27B0)](https://github.com/TrustworthyComp/Cued-Speech)
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 
