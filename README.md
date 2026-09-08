@@ -333,12 +333,13 @@ python main.py \
 ## Citation
 
 ```bibtex
-@article{feng2026fnacsr,
-  title   = {Beyond Visual Encoder Fine-tuning: A Generalizable Data Mining
-             Paradigm for Multimodal Chinese Cued Speech Recognition},
-  author  = {Ling Feng and Bu Zhong and Jianglun Wu and Liu Li and
-             Francis Chi Moon Lau and Donglong Chen and Yupeng Li},
-  journal = {Under review at IEEE International Conference on Data Mining (ICDM)},
-  year    = {2026}
+@inproceedings{feng2026fnacsr,
+  title     = {Beyond Visual Encoder Fine-tuning: A Generalizable Data Mining
+               Paradigm for Multimodal Chinese Cued Speech Recognition},
+  author    = {Ling Feng and Bu Zhong and Jianglun Wu and Liu Li and
+               Francis Chi Moon Lau and Donglong Chen and Yupeng Li},
+  booktitle = {2026 IEEE International Conference on Data Mining (ICDM)},
+  year      = {2026},
+  publisher = {IEEE}
 }
 ```
