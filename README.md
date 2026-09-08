@@ -9,7 +9,7 @@
 **FNA-CSR** (Freeze, Normalize, and Align for Cued Speech Recognition) is a fine-tuning-free multimodal pattern mining framework for **Mandarin Chinese Cued Speech Recognition (ACSR)**. It keeps the visual encoders fully frozen, calibrates cross-cuer feature distributions in feature space, globally aligns the visual and phoneme modalities, and lets a lightweight LoRA-adapted LLM (Flan-T5-XL) decode phoneme sequences.
 
 > **FNA-CSR: Beyond Visual Encoder Fine-tuning: A Generalizable Data Mining Paradigm for Multimodal Chinese Cued Speech Recognition**
-> *Under review at IEEE ICDM 2026* (anonymized for double-blind review)
+> *Under review at IEEE ICDM 2026*
 
 <p align="center">
   <img src="images/framework-1.png" width="100%" alt="FNA-CSR framework overview"/>
@@ -52,9 +52,9 @@ The paradigm reduces trainable parameters by **99.2%** (~25.6M vs. ~3,154M for f
 | EcoCued      | 57.8 | 84.1 | — | — | — | — |
 | ISCL-ISCA    | 34.7 | 59.4 | — | — | — | — |
 | FedCSR       | 52.3 | 76.8 | — | — | — | — |
-| **FNA-CSR**  | **21.2** | **33.3** | **5.3** | **11.1** | **12.7** | **20.2** |
+| **FNA-CSR**  | **21.2** | **33.3** | **5.3** | **11.1** | **17.29±5.56** | **25.24±6.27** |
 
-On MCCSD (6-H), the LOCO result (11.1% WER) closely approaches the in-distribution result (4.74% WER), demonstrating that CSSP effectively closes the OOD gap. MMD-based distribution analysis further shows a strong correlation between feature-space convergence and LOCO generalization.
+On MCCSD (6-H), the LOCO result (11.1% WER) closely approaches the in-distribution result (4.74% WER), demonstrating that CSSP effectively closes the OOD gap. MMD-based distribution analysis further shows a strong correlation between feature-space convergence and LOCO generalization. On MHI-MCCSD (8-HI), the LOCO result is the mean±std over eight leave-one-cuer-out folds; the frozen-backbone baseline attains 14.14±8.93% CER / 20.36±12.29% WER under identical splits (per-fold breakdown in the paper).
 
 ### Cued Speech and Feature Distribution Visualizations
 
@@ -336,7 +336,8 @@ python main.py \
 @article{feng2026fnacsr,
   title   = {Beyond Visual Encoder Fine-tuning: A Generalizable Data Mining
              Paradigm for Multimodal Chinese Cued Speech Recognition},
-  author  = {Anonymous},
+  author  = {Ling Feng and Bu Zhong and Jianglun Wu and Liu Li and
+             Francis Chi Moon Lau and Donglong Chen and Yupeng Li},
   journal = {Under review at IEEE International Conference on Data Mining (ICDM)},
   year    = {2026}
 }
